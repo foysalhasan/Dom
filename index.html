@@ -19,10 +19,27 @@
     <link rel="stylesheet" href="./style.css" />
     <title>DOM 100</title>
   </head>
-  <body class="flex min-h-screen justify-center items-center" id="root">
-    <h1 class="text-6xl text-white font-bold text-center uppercase">
-      Welcome
-    </h1>
+  <body
+    class="flex min-h-screen bg-violet-700 justify-center flex-col items-center"
+    id="root"
+  >
+    <div
+      class="w-80 bg-white h-12 overflow-hidden rounded shadow-xl ease-in flex items-center text-center justify-center"
+    >
+      <input
+        type="text"
+        value="#000000"
+        disabled
+        class="w-full border-0 focus:outline-none bg-gray-300 h-full"
+        id="el"
+      />
+    </div>
+    <button
+      class="btn bg-yellow-500 px-5 py-2 rounded shadow-xl text-sm uppercase font-bold mt-3 cursor-pointer"
+      id="btn"
+    >
+      change color
+    </button>
     <script src="./app.js"></script>
   </body>
 </html>
